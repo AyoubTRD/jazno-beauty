@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "El Messiri", Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background-color: $bg-grey;
+  color: $black;
+}

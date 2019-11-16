@@ -1,0 +1,39 @@
+.landing {
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: $brown;
+  &-hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 75rem;
+    margin: 1rem auto;
+    &-info {
+      font-size: 2.5rem;
+      max-width: 100%;
+      animation: fadeInRight 1s 0.7s both;
+      &-price {
+        direction: ltr;
+        font-size: 4.5rem;
+        color: $red;
+        margin-bottom: 3rem;
+        &-old {
+          display: inline-block;
+          margin: 0 1rem;
+          text-decoration: line-through;
+          color: $blue;
+          opacity: 0.7;
+          font-size: 3rem;
+          position: relative;
+        }
+      }
+    }
+    &-image {
+      animation: fadeInDown 1s 0.1s both;
+      height: 70rem;
+      max-height: 60vh;
+    }
+  }
+}

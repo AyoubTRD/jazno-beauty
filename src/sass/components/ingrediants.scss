@@ -1,0 +1,19 @@
+.ingrediants {
+  margin: 3rem auto;
+  text-align: center;
+}
+.ingrediant {
+  text-align: center;
+  margin: 1rem auto;
+  height: 40rem;
+  color: $black;
+  &-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+  }
+}

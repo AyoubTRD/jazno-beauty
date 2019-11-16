@@ -1,0 +1,25 @@
+.h {
+  font-weight: 700;
+  &-main {
+    color: $blue;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    animation: fadeIn 2s;
+  }
+  &-doc {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .h {
+    &-main {
+      font-size: 4.5rem;
+    }
+    &-doc {
+      font-size: 3.5rem;
+    }
+  }
+}
