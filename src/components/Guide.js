@@ -8,6 +8,7 @@ const Guide = () => {
   return (
     <section id="guides" className="guides" dir="rtl">
       <div className="container">
+        <h2 className="h h-secondary-reverse">طريقة الاستعمال</h2>
         <div className="row">
           <div className="col-sm-6 col-md-4">
             <div className="guide" data-aos="fade-right">

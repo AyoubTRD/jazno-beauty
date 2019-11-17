@@ -17,6 +17,7 @@ const Benefits = () => {
   return (
     <section id="benefits" className="benefits" dir="rtl">
       <div className="container">
+        <h2 className="h h-secondary-reverse">يقوم بعلاج</h2>
         {benefits.map(ben => (
           <p className="benefit" data-aos="fade-left" key={ben}>
             <span>{ben}</span>

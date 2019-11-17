@@ -6,7 +6,7 @@ const DoctorTestimonials = () => {
   return (
     <section id="doc-testimonials" dir="rtl" className="doc-testimonials">
       <div className="container">
-        <h2 className="h h-doc" data-aos="fade-in">
+        <h2 className="h h-secondary" data-aos="fade-in">
           يوصي به الأطباء:
         </h2>
         <div className="doc-testimonial">

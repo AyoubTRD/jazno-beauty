@@ -7,6 +7,7 @@ import DocTestimonials from "./DoctorTestimonials";
 import Testimonials from "./Testimonials";
 import Benefits from "./Benefits";
 import Guide from "./Guide";
+import RequestForm from "./RequestForm";
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
       <Guide />
       <Ingrediants />
       <DocTestimonials />
+      <RequestForm />
     </>
   );
 };

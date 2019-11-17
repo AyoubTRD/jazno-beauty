@@ -27,6 +27,17 @@ body {
   padding: 0px;
   overflow-x: hidden; }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */ }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */ }
+
 .h {
   font-weight: 700; }
   .h-main {
@@ -43,6 +54,11 @@ body {
     font-size: 3.5rem;
     color: #227093;
     margin-bottom: 3rem; }
+    .h-secondary-reverse {
+      text-align: center;
+      font-size: 3.5rem;
+      color: #eee2dc;
+      margin-bottom: 3rem; }
 
 @media only screen and (max-width: 430px) {
   .h-main {
