@@ -10,12 +10,22 @@ html {
   font-family: "El Messiri", Arial, Helvetica, sans-serif; }
 
 body {
-  width: 100vw;
   min-height: 100vh;
   font-size: 1.6rem;
   overflow-x: hidden;
   background-color: #e5e7e9;
   color: #231f20; }
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 58%; } }
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
 
 .h {
   font-weight: 700; }
@@ -28,6 +38,11 @@ body {
   .h-doc {
     font-size: 5rem;
     margin-bottom: 1rem; }
+  .h-secondary {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #227093;
+    margin-bottom: 3rem; }
 
 @media only screen and (max-width: 430px) {
   .h-main {
@@ -59,7 +74,7 @@ body {
 .landing {
   position: relative;
   padding: 2rem 1rem;
-  background-color: #ffe0bc; }
+  background-image: linear-gradient(to top right, #ffcfc5, #f2f3bc); }
   .landing-hero {
     display: flex;
     justify-content: space-around;
@@ -107,30 +122,15 @@ body {
     max-height: 90%;
     border-radius: 50%; }
 
+@media only screen and (max-width: 700px) {
+  .ingrediant {
+    height: 20rem;
+    margin-bottom: 2rem; } }
+
 .doc-testimonials {
   position: relative;
-  margin-bottom: 3rem;
-  border: 2px solid #227093;
   padding: 3rem 1rem;
-  background-color: #ffe0bc; }
-  .doc-testimonials::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6rem;
-    height: 6rem;
-    background-color: #227093;
-    clip-path: polygon(0 0, 100% 0, 0 100%); }
-  .doc-testimonials::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 6rem;
-    height: 6rem;
-    background-color: #227093;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  background: white; }
 
 .doc-testimonial {
   text-align: center; }
@@ -155,3 +155,87 @@ body {
       color: #bab2b5;
       opacity: 0.4;
       font-size: 10rem; }
+
+.benefits {
+  padding: 2rem 0;
+  background-color: #227093;
+  color: #eee2dc; }
+
+.benefit {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  cursor: pointer; }
+  .benefit span {
+    position: relative; }
+  .benefit span::after {
+    position: absolute;
+    content: "";
+    right: -5px;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #eee2dc;
+    transition: 0.5s; }
+  .benefit span::before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    width: 2px;
+    height: 0%;
+    background-color: #eee2dc;
+    transition: 0.5s;
+    transition-delay: 0.5s; }
+  .benefit span:hover::after {
+    width: 0; }
+  .benefit span:hover::before {
+    height: 100%; }
+
+.testimonials {
+  background-color: white;
+  padding: 2rem 0; }
+
+.testimonial {
+  margin-bottom: 3rem; }
+  .testimonial div {
+    padding-right: 1rem; }
+  .testimonial-name {
+    margin-bottom: 1rem;
+    color: #e20338;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block; }
+    .testimonial-name::after {
+      transition: 0.4s;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #e20338; }
+    .testimonial-name:hover::after {
+      width: 100%; }
+  .testimonial-image {
+    max-width: 100%;
+    height: 20rem; }
+  .testimonial-text {
+    font-size: 1.7rem;
+    margin-bottom: 3px; }
+
+.guides {
+  background-color: #227093;
+  padding: 2rem 0;
+  color: #eee2dc; }
+
+.guide {
+  text-align: center;
+  margin: 1rem 0; }
+  .guide-num {
+    font-size: 3rem;
+    margin: 0 1rem; }
+  .guide-image {
+    max-width: 100%;
+    border-radius: 50%; }

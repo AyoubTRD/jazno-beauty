@@ -1,29 +1,7 @@
 .doc-testimonials {
   position: relative;
-  margin-bottom: 3rem;
-  border: 2px solid $blue;
   padding: 3rem 1rem;
-  background-color: $brown;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6rem;
-    height: 6rem;
-    background-color: $blue;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 6rem;
-    height: 6rem;
-    background-color: $blue;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  }
+  background: white;
 }
 .doc-testimonial {
   text-align: center;

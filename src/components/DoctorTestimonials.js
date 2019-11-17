@@ -4,8 +4,8 @@ import doctor from "../assets/img/doctor.jpg";
 
 const DoctorTestimonials = () => {
   return (
-    <div className="container">
-      <section id="doc-testimonials" dir="rtl" className="doc-testimonials">
+    <section id="doc-testimonials" dir="rtl" className="doc-testimonials">
+      <div className="container">
         <h2 className="h h-doc" data-aos="fade-in">
           يوصي به الأطباء:
         </h2>
@@ -21,8 +21,8 @@ const DoctorTestimonials = () => {
             يعتبر Gel Lanbena أفضل اختيار لبشرتك.
           </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

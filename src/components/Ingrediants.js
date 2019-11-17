@@ -9,6 +9,7 @@ const Ingrediants = () => {
   return (
     <div className="container">
       <div id="ingrediants" className="ingrediants">
+        <h2 className="h h-secondary">المكونات</h2>
         <div className="row">
           <div className="ingrediant col-md-3 col-6" data-aos="fade-right">
             <p className="ingrediant-name">الشاي الأبيض</p>

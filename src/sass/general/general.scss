@@ -11,10 +11,22 @@ html {
 }
 
 body {
-  width: 100vw;
   min-height: 100vh;
   font-size: 1.6rem;
   overflow-x: hidden;
   background-color: $bg-grey;
   color: $black;
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 58%;
+  }
+}
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }

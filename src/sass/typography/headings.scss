@@ -11,6 +11,12 @@
     font-size: 5rem;
     margin-bottom: 1rem;
   }
+  &-secondary {
+    text-align: center;
+    font-size: 3.5rem;
+    color: $blue;
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 430px) {
