@@ -2,8 +2,15 @@ import React from "react";
 
 import productImage from "../assets/img/prod.png";
 import { FaShoppingCart as Cart } from "react-icons/fa";
+import { animateScroll } from "react-scroll";
 
 const Landing = () => {
+  const scroll = () => {
+    console.log("scrolling");
+    animateScroll.scrollToBottom(
+      document.querySelector("#request-form").scrollTop
+    );
+  };
   return (
     <div className="landing">
       <h1 className="h h-main">Gel Lanbena</h1>
@@ -21,7 +28,7 @@ const Landing = () => {
             <span className="landing-hero-info-price-old">599 DH</span>
             299 DH
           </p>
-          <button className="btn btn-request">
+          <button className="btn btn-request" onClick={scroll}>
             <Cart className="btn-request-cart" /> اطلب الآن
           </button>
         </div>

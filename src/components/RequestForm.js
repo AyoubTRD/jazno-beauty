@@ -4,7 +4,7 @@ const RequestForm = () => {
   return (
     <div className="form-container" id="request-form" dir="rtl">
       <div className="container">
-        <form className="request-form">
+        <form className="request-form" data-aos="fade-in">
           <div className="field">
             <label htmlFor="quantity" className="field-label">
               عدد المنتجات
