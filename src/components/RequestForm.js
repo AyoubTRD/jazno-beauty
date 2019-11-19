@@ -10,11 +10,19 @@ const RequestForm = () => {
   const [qty, setQty] = useState(1);
   const [showQty, setShow] = useState(false);
 
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
+
   return (
     <div className="request-form-container" id="request-form" dir="rtl">
       <div className="container">
         <h2 className="h h-request">لطلب المنتج</h2>
-        <form className="request-form" data-aos="fade-in">
+        <form
+          className="request-form"
+          data-aos="fade-in"
+          onSubmit={handleSubmit}
+        >
           <div className="field">
             <label htmlFor="" className="field-label">
               عدد المنتجات
