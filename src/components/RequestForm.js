@@ -1,19 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoIosArrowDown as Arrow } from "react-icons/io";
 
 const RequestForm = () => {
+  const qtyOptions = [
+    "منتج واحد بـ299 درهم",
+    "منتجين بـ499 درهم",
+    "3 منتجات بـ599 درهم"
+  ];
+  const [qty, setQty] = useState(1);
+  const [showQty, setShow] = useState(false);
+
   return (
-    <div className="form-container" id="request-form" dir="rtl">
+    <div className="request-form-container" id="request-form" dir="rtl">
       <div className="container">
+        <h2 className="h h-request">لطلب المنتج</h2>
         <form className="request-form" data-aos="fade-in">
           <div className="field">
-            <label htmlFor="quantity" className="field-label">
+            <label htmlFor="" className="field-label">
               عدد المنتجات
             </label>
-            <select name="qty" id="qty" className="field-select">
-              <option value="1">منتج واحد ب299 درهم</option>
-              <option value="2">منتجين ب499 درهم</option>
-              <option value="3">3 منتجات ب599 درهم</option>
-            </select>
+            <div className="select">
+              <p
+                className="select-value-active select-value-arrow select-value"
+                onClick={() => setShow(!showQty)}
+              >
+                <span>{qtyOptions[qty - 1]}</span>
+                <span className="arrow">
+                  <Arrow />
+                </span>
+              </p>
+              <div className="select-values-wrapper">
+                <ul className={`select-values ${showQty ? "" : " d-none"}`}>
+                  {qtyOptions.map((qtyOp, i) => (
+                    <li
+                      className={`select-value select-value-${
+                        qty - 1 === i ? "active" : ""
+                      }`}
+                      onClick={() => {
+                        setQty(i + 1);
+                        setShow(false);
+                      }}
+                      key={qtyOp}
+                    >
+                      <span>{qtyOp}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="field">
             <label htmlFor="name" className="field-label">

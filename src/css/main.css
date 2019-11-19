@@ -59,6 +59,10 @@ input[type="number"] {
       font-size: 3.5rem;
       color: #eee2dc;
       margin-bottom: 3rem; }
+  .h-request {
+    font-size: 5rem;
+    text-align: center;
+    color: #227093; }
 
 @media only screen and (max-width: 430px) {
   .h-main {
@@ -77,6 +81,9 @@ input[type="number"] {
   .btn-request {
     background-color: #227093;
     color: #eee2dc;
+    display: flex;
+    width: 16rem;
+    justify-content: space-between;
     animation: shake 1.5s 3s;
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(35, 31, 32, 0.5);
@@ -86,6 +93,69 @@ input[type="number"] {
       box-shadow: 0 5px 6px rgba(35, 31, 32, 0.5); }
     .btn-request:active {
       transform: translateY(0); }
+  .btn-submit {
+    display: block;
+    background-color: #227093;
+    color: #eee2dc;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 2rem; }
+
+.request-form {
+  margin: 1rem auto;
+  width: 30rem;
+  max-width: 100%; }
+  .request-form-container {
+    border-top: 1px solid #227093;
+    background-color: white;
+    padding: 1rem 0; }
+  .request-form .field {
+    margin-bottom: 0.8rem; }
+    .request-form .field-label {
+      display: block;
+      font-weight: 700; }
+    .request-form .field-input {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 1rem 0.5rem;
+      border-radius: 2px;
+      width: 100%; }
+
+.select {
+  position: relative; }
+  .select-value {
+    background-color: #f0f0f0;
+    color: #231f20;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    transition: 0.3s;
+    user-select: none; }
+    .select-value:hover {
+      background-color: rgba(34, 112, 147, 0.8);
+      color: #eee2dc; }
+    .select-value-active {
+      background: #227093;
+      color: #eee2dc; }
+      .select-value-active:hover {
+        background-color: rgba(34, 112, 147, 0.8);
+        color: #eee2dc; }
+    .select-value-arrow {
+      display: flex;
+      justify-content: space-between; }
+      .select-value-arrow .arrow {
+        transform: translateY(25%); }
+  .select-values {
+    list-style: none;
+    background-color: #231f20; }
+    .select-values-wrapper {
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      width: 100%;
+      transform: translateY(100%); }
+
+.d-none {
+  display: none; }
 
 .landing {
   position: relative;
@@ -121,6 +191,16 @@ input[type="number"] {
       height: 70rem;
       max-height: 60vh; }
 
+@media only screen and (max-width: 580px) {
+  .landing {
+    padding: 0.5rem 0.5rem; }
+    .landing-hero {
+      margin: 0.5rem auto; }
+      .landing-hero-image {
+        max-height: 50vh; }
+      .landing-hero-info-price {
+        margin-bottom: 1rem; } }
+
 .ingrediants {
   margin: 3rem auto;
   text-align: center; }
@@ -128,7 +208,7 @@ input[type="number"] {
 .ingrediant {
   text-align: center;
   margin: 1rem auto;
-  height: 40rem;
+  height: 25rem;
   color: #231f20; }
   .ingrediant-name {
     font-size: 2rem;

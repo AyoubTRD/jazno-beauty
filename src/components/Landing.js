@@ -7,9 +7,7 @@ import { animateScroll } from "react-scroll";
 const Landing = () => {
   const scroll = () => {
     console.log("scrolling");
-    animateScroll.scrollToBottom(
-      document.querySelector("#request-form").scrollTop
-    );
+    animateScroll.scrollTo(document.querySelector("#request-form").scrollTop);
   };
   return (
     <div className="landing">
@@ -28,8 +26,11 @@ const Landing = () => {
             <span className="landing-hero-info-price-old">599 DH</span>
             299 DH
           </p>
-          <button className="btn btn-request" onClick={scroll}>
-            <Cart className="btn-request-cart" /> اطلب الآن
+          <button className="btn btn-request" onClick={scroll} dir="rtl">
+            <span>اطلب الآن</span>{" "}
+            <span>
+              <Cart className="btn-request-cart" />
+            </span>
           </button>
         </div>
       </div>
