@@ -99,7 +99,10 @@ input[type="number"] {
     color: #eee2dc;
     width: 100%;
     border-radius: 2px;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    transition: 0.3s; }
+    .btn-submit:hover {
+      background-color: rgba(34, 112, 147, 0.9); }
 
 .request-form {
   margin: 1rem auto;
@@ -145,6 +148,7 @@ input[type="number"] {
       .select-value-arrow .arrow {
         transform: translateY(25%); }
   .select-values {
+    animation: fadeIn 0.4s;
     list-style: none;
     background-color: #231f20; }
     .select-values-wrapper {
@@ -153,6 +157,17 @@ input[type="number"] {
       left: 0;
       width: 100%;
       transform: translateY(100%); }
+
+.gurantee {
+  max-width: 50rem;
+  margin: 2rem auto; }
+  .gurantee-heading {
+    font-size: 3rem;
+    color: #e20338; }
+  .gurantee-text {
+    font-size: 1.7rem; }
+    .gurantee-text::before {
+      content: "- "; }
 
 .d-none {
   display: none; }

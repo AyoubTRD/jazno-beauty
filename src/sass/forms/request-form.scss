@@ -59,10 +59,27 @@
       width: 100%;
       transform: translateY(100%);
     }
+    animation: fadeIn 0.4s;
     list-style: none;
     background-color: $black;
   }
 }
+
+.gurantee {
+  max-width: 50rem;
+  margin: 2rem auto;
+  &-heading {
+    font-size: 3rem;
+    color: $red;
+  }
+  &-text {
+    font-size: 1.7rem;
+    &::before {
+      content: "- ";
+    }
+  }
+}
+
 .d-none {
   display: none;
 }

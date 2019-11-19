@@ -81,6 +81,13 @@ const RequestForm = () => {
             اطلب الآن
           </button>
         </form>
+        <div className="gurantee" dir="rtl">
+          <h3 className="gurantee-heading">ضمانات:</h3>
+          <p className="gurantee-text">
+            إن قمت بشراء ثلاث عبوات وقمت باستعمالها ولم تلاحظي أي نتيجة، سنقوم
+            باسترجاع جميع مصاريف المنتج باستثناء مصاريف الشحن.
+          </p>
+        </div>
       </div>
     </div>
   );
