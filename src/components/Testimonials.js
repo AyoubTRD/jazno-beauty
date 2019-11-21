@@ -6,14 +6,14 @@ import beforeAndAfter2 from "../assets/img/before&after2.jpg";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "فاطمة الزهراء",
+      name: "لطيفة",
       text:
         "لقد كنت أعاني من المشاكل في بشرتي خصوصا من حب الشباب والبقع الداكنة. لكن بعد أن استعملت Gel Lanbena استطعت أن اتخلص من جميع مشاكلي مع البشرة، وهنا صورة لي قبل وبعد الاستعمال.",
       animation: "fade-right",
       image: beforeAndAfter1
     },
     {
-      name: "لطيفة",
+      name: "فاطمة الزهراء",
       text:
         "لقد كنت أعاني من المشاكل في بشرتي خصوصا من حب الشباب والبقع الداكنة. لكن بعد أن استعملت Gel Lanbena استطعت أن اتخلص من جميع مشاكلي مع البشرة، وهنا صورة لي قبل وبعد الاستعمال.",
       animation: "fade-left",
