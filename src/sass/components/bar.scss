@@ -1,0 +1,32 @@
+.bar {
+  position: fixed;
+  top: 50%;
+  right: -9rem;
+  z-index: 10;
+  transform: rotate(-90deg) translateY(-50%);
+  user-select: none;
+
+  cursor: pointer;
+  &-icon {
+    color: white;
+    border-radius: 3px;
+    display: block;
+    padding: 1rem;
+    font-size: 2.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 20rem;
+    animation: fadeInLeft 2s 2s both;
+    &-icon {
+      margin-right: 0.5rem;
+    }
+    &-text {
+      font-size: 1.6rem;
+    }
+    &-whatsapp {
+      background-color: #25d366;
+    }
+  }
+}

@@ -70,6 +70,11 @@ input[type="number"] {
   .h-doc {
     font-size: 3.5rem; } }
 
+.p-error {
+  color: #e20338;
+  font-size: 1.8rem;
+  margin-top: 1.5rem; }
+
 .btn {
   padding: 1rem 3.5rem;
   font-weight: bold;
@@ -123,6 +128,11 @@ input[type="number"] {
       padding: 1rem 0.5rem;
       border-radius: 2px;
       width: 100%; }
+  .request-form .loader {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 0.3s; }
 
 .select {
   position: relative; }
@@ -350,3 +360,30 @@ input[type="number"] {
   .guide-image {
     max-width: 100%;
     border-radius: 50%; }
+
+.bar {
+  position: fixed;
+  top: 50%;
+  right: -9rem;
+  z-index: 10;
+  transform: rotate(-90deg) translateY(-50%);
+  user-select: none;
+  cursor: pointer; }
+  .bar-icon {
+    color: white;
+    border-radius: 3px;
+    display: block;
+    padding: 1rem;
+    font-size: 2.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 20rem;
+    animation: fadeInLeft 2s 2s both; }
+    .bar-icon-icon {
+      margin-right: 0.5rem; }
+    .bar-icon-text {
+      font-size: 1.6rem; }
+    .bar-icon-whatsapp {
+      background-color: #25d366; }

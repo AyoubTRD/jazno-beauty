@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { IoIosArrowDown as Arrow } from "react-icons/io";
 
+import requestApi from "../apis/requestApi";
+import Loader from "./svg/loader";
+
 const RequestForm = () => {
   const qtyOptions = [
     "منتج واحد بـ299 درهم",
@@ -9,9 +12,40 @@ const RequestForm = () => {
   ];
   const [qty, setQty] = useState(1);
   const [showQty, setShow] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  const handleSubmit = async e => {
+    try {
+      e.preventDefault();
+      const {
+        phone: { value: phone },
+        name: { value: name },
+        address: { value: address }
+      } = e.target;
+      if (!name) {
+        return setError("المرجو إدخال الإسم");
+      }
+      if (!address) {
+        return setError("المرجو إدخال العنوان");
+      }
+      if (phone.length < 8) {
+        return setError("رقم الهاتف غير صحيح");
+      }
+      setError("");
+      setLoading(true);
+      await requestApi.post("/request", {
+        name,
+        address,
+        quantity: qty,
+        phone
+      });
+      setLoading(false);
+    } catch (e) {
+      console.log(e);
+      setLoading(false);
+      setError("لقد حصل خطأ أثناء تسجيل طلبك");
+    }
   };
 
   return (
@@ -88,6 +122,8 @@ const RequestForm = () => {
           <button className="btn btn-submit" type="submit">
             اطلب الآن
           </button>
+          {loading ? <Loader className="loader" /> : null}
+          <p className="p-error">{error}</p>
         </form>
         <div className="gurantee" dir="rtl">
           <h3 className="gurantee-heading">ضمانات:</h3>

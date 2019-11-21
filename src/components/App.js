@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Benefits from "./Benefits";
 import Guide from "./Guide";
 import RequestForm from "./RequestForm";
+import Socialbar from "./Socialbar";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
   }, []);
   return (
     <>
+      <Socialbar />
       <Landing />
       <Benefits />
       <Testimonials />

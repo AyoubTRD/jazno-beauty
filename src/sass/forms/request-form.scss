@@ -21,6 +21,12 @@
       width: 100%;
     }
   }
+  .loader {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 0.3s;
+  }
 }
 .select {
   position: relative;

@@ -6,7 +6,6 @@ import { animateScroll } from "react-scroll";
 
 const Landing = () => {
   const scroll = () => {
-    console.log("scrolling");
     animateScroll.scrollTo(
       document.querySelector("#request-form").scrollTop ||
         document.querySelector("#request-form").offsetTop
