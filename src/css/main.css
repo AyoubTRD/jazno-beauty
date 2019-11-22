@@ -185,7 +185,7 @@ input[type="number"] {
 .landing {
   position: relative;
   padding: 2rem 1rem;
-  background-image: linear-gradient(to top right, #ffcfc5, #f2f3bc); }
+  background-image: linear-gradient(to right, #e0eafc, #cfdef3); }
   .landing-hero {
     display: flex;
     justify-content: space-around;
