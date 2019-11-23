@@ -4,6 +4,8 @@ import { IoIosArrowDown as Arrow } from "react-icons/io";
 import requestApi from "../apis/requestApi";
 import Loader from "./svg/loader";
 
+import history from "../history";
+
 const RequestForm = () => {
   const qtyOptions = [
     "منتج واحد بـ299 درهم",
@@ -41,6 +43,7 @@ const RequestForm = () => {
         phone
       });
       setLoading(false);
+      history.push("/success");
     } catch (e) {
       console.log(e);
       setLoading(false);
