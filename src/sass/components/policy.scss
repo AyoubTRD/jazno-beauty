@@ -1,0 +1,20 @@
+.policy {
+  padding: 1.5rem 0;
+  min-height: calc(100vh - 10rem);
+  ol {
+    margin: 1rem 0;
+  }
+  &-link {
+    color: $blue;
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+    text-decoration: none;
+    direction: rtl;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    &-icon {
+      transform: translateY(0.5rem);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.fade-enter,
+.fade-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+  transition: 0.4s 0.4s ease-out;
+  opacity: 1;
+}
+
+.fade-enter-done {
+  position: static;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  transition: 0.4s ease-out;
+  opacity: 0;
+}

@@ -9,12 +9,15 @@ import Benefits from "./Benefits";
 import Guide from "./Guide";
 import RequestForm from "./RequestForm";
 import Socialbar from "./Socialbar";
+import Footer from "./Footer";
 
 import Success from "./Success";
+import PrivacyPolicy from "./mini/PrivacyPolicy";
+import ReturnPolicy from "./mini/ReturnPolicy";
 
 import AnimatedSwitch from "./mini/AnimatedSwitch";
 import AnimatedRoute from "./mini/AnimatedRoute";
-import { Router, Link } from "react-router-dom";
+import { Router } from "react-router-dom";
 import history from "../history";
 
 const LandingPage = () => (
@@ -27,6 +30,7 @@ const LandingPage = () => (
     <Ingrediants />
     <DocTestimonials />
     <RequestForm />
+    <Footer />
   </>
 );
 
@@ -41,6 +45,10 @@ const App = () => {
       <AnimatedSwitch animationClassName="slide" animationTimeout={800}>
         <AnimatedRoute path="/" exact component={LandingPage} />
         <AnimatedRoute path="/success" exact component={Success} />
+      </AnimatedSwitch>
+      <AnimatedSwitch animationClassName="fade" animationTimeout={800}>
+        <AnimatedRoute path="/privacy-policy" exact component={PrivacyPolicy} />
+        <AnimatedRoute path="/return-policy" exact component={ReturnPolicy} />
       </AnimatedSwitch>
     </Router>
   );

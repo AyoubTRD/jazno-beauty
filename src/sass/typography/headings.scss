@@ -15,7 +15,7 @@
     text-align: center;
     font-size: 3.5rem;
     color: $blue;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     &-reverse {
       text-align: center;
       font-size: 3.5rem;
@@ -27,6 +27,21 @@
     font-size: 5rem;
     text-align: center;
     color: $blue;
+  }
+  &-pol {
+    font-size: 3.5rem;
+    background: linear-gradient(to left, $blue, darken($blue, 15%));
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    &-nd {
+      padding-left: 1rem;
+      font-size: 2.5rem;
+      color: darken($blue, 30%);
+      margin-top: 1rem;
+    }
   }
 }
 

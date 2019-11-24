@@ -1,0 +1,35 @@
+.footer {
+  &-container {
+    background-color: #121b74;
+    padding: 0 1rem;
+    display: flex;
+    height: 10rem;
+    align-items: center;
+  }
+  width: 100%;
+  max-width: 60vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  &-link {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      opacity: 1;
+      background-color: white;
+      width: 0%;
+      transition: 0.25s ease-in;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
