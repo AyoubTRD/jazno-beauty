@@ -8,7 +8,7 @@ const ReturnPolicy = () => {
   return (
     <>
       <div className="container">
-        <div className="policy">
+        <div className="policy footer-support">
           <Link className="policy-link" to="/">
             <span className="policy-link-text">عودة</span>
             <BackArrow className="policy-link-icon" />

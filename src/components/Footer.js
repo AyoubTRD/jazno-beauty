@@ -11,7 +11,11 @@ const Footer = () => {
         <Link to="/return-policy" className="footer-link">
           return policy
         </Link>
-        <a href="/" className="footer-link footer-link-ext">
+        <a
+          href="https://web.facebook.com/jaznobeauty/"
+          className="footer-link footer-link-ext"
+          target="blank"
+        >
           إتصل بنا
         </a>
       </footer>

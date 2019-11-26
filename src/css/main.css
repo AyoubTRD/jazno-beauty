@@ -418,7 +418,6 @@ a {
   .success-container {
     padding: 2rem 1rem;
     width: 100%;
-    min-height: calc(100vh - 10rem);
     background-color: white; }
   .success-icon {
     fill: white;
@@ -461,8 +460,10 @@ a {
   display: flex;
   margin: 0 auto;
   justify-content: space-around; }
+  .footer-support {
+    min-height: calc(100vh - 10rem); }
   .footer-container {
-    background-color: #121b74;
+    background-color: #271a6a;
     padding: 0 1rem;
     display: flex;
     height: 10rem;
@@ -487,8 +488,7 @@ a {
       width: 100%; }
 
 .policy {
-  padding: 1.5rem 0;
-  min-height: calc(100vh - 10rem); }
+  padding: 1.5rem 0; }
   .policy ol {
     margin: 1rem 0; }
   .policy-link {
@@ -516,7 +516,7 @@ a {
   transform: translateX(100%); }
 
 .slide-enter.slide-enter-active {
-  transition: 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
   opacity: 1;
   transform: translateX(0); }
 
@@ -528,7 +528,7 @@ a {
   transform: translateX(0); }
 
 .slide-exit.slide-exit-active {
-  transition: 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
   opacity: 0.4;
   transform: translateX(-100%); }
 

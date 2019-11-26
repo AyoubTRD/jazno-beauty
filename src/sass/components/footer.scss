@@ -1,9 +1,12 @@
 .footer {
+  &-support {
+    min-height: calc(100vh - #{$footer-height});
+  }
   &-container {
-    background-color: #121b74;
+    background-color: darken($blue, 30%);
     padding: 0 1rem;
     display: flex;
-    height: 10rem;
+    height: $footer-height;
     align-items: center;
   }
   width: 100%;

@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Success = () => {
   return (
     <>
-      <div className="success-container">
+      <div className="success-container footer-support">
         <div className="success">
           <div className="success-icon-container">
             <Done className="success-icon" />

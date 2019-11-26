@@ -11,7 +11,7 @@
   transform: translateX(100%);
 }
 .slide-enter.slide-enter-active {
-  transition: 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
   opacity: 1;
   transform: translateX(0);
 }
@@ -26,7 +26,7 @@
 }
 
 .slide-exit.slide-exit-active {
-  transition: 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
   opacity: 0.4;
   transform: translateX(-100%);
 }
