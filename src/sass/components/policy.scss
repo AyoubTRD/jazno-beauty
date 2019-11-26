@@ -6,14 +6,14 @@
   }
   &-link {
     color: $blue;
-    display: flex;
-    justify-content: space-between;
-    width: 6rem;
     text-decoration: none;
     direction: rtl;
     font-size: 1.7rem;
     margin-bottom: 1rem;
+    display: inline-block;
     &-icon {
+      display: inline-block;
+      margin-right: 3px;
       transform: translateY(0.5rem);
     }
   }

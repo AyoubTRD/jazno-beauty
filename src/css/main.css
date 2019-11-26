@@ -38,6 +38,9 @@ input[type="number"] {
   -moz-appearance: textfield;
   /* Firefox */ }
 
+a {
+  text-decoration: none; }
+
 .h {
   font-weight: 700; }
   .h-main {
@@ -490,14 +493,14 @@ input[type="number"] {
     margin: 1rem 0; }
   .policy-link {
     color: #614ad3;
-    display: flex;
-    justify-content: space-between;
-    width: 6rem;
     text-decoration: none;
     direction: rtl;
     font-size: 1.7rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    display: inline-block; }
     .policy-link-icon {
+      display: inline-block;
+      margin-right: 3px;
       transform: translateY(0.5rem); }
 
 .slide-enter,
