@@ -17,13 +17,13 @@
       &-price {
         direction: ltr;
         font-size: 4.5rem;
-        color: $red;
+        color: $blue;
         margin-bottom: 3rem;
         &-old {
           display: inline-block;
           margin: 0 1rem;
           text-decoration: line-through;
-          color: $blue;
+          color: darken($grey, 20%);
           opacity: 0.7;
           font-size: 3rem;
           position: relative;
