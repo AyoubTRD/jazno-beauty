@@ -9,7 +9,7 @@ const Socialbar = () => {
     <a
       className="bar"
       target="blank"
-      href={`https://wa.me/${phone}?text=${encodeURI(text)}`}
+      href={`https://wa.me/${phone}?lang=ar&text=${encodeURI(text)}`}
     >
       <div className="bar-icon bar-icon-whatsapp">
         <Whatsapp className="bar-icon-icon" />
