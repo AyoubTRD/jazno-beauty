@@ -17,6 +17,12 @@ const RequestForm = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const qtyPrices = {
+    1: 299.0,
+    2: 499.0,
+    3: 599.0
+  };
+
   const handleSubmit = async e => {
     try {
       e.preventDefault();
@@ -43,11 +49,11 @@ const RequestForm = () => {
         phone
       });
       setLoading(false);
-      history.push("/success");
+      history.push(`/success/${qtyPrices[qty]}`);
     } catch (e) {
       console.log(e);
       setLoading(false);
-      setError("لقد حصل خطأ أثناء تسجيل طلبك");
+      setError("لقد حصل خطأ أثناء تسجيل طلبك، المرجو المحاولة ثانية.");
     }
   };
 

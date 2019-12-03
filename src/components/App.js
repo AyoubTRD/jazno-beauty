@@ -44,7 +44,7 @@ const App = () => {
     <Router history={history}>
       <AnimatedSwitch animationClassName="slide" animationTimeout={800}>
         <AnimatedRoute path="/" exact component={LandingPage} />
-        <AnimatedRoute path="/success" exact component={Success} />
+        <AnimatedRoute path="/success/:price" exact component={Success} />
       </AnimatedSwitch>
       <AnimatedSwitch animationClassName="fade" animationTimeout={800}>
         <AnimatedRoute path="/privacy-policy" exact component={PrivacyPolicy} />
