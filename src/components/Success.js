@@ -17,7 +17,9 @@ const Success = ({ match: { params } }) => {
           <div className="success-icon-container">
             <Done className="success-icon" />
           </div>
-          <h2 className="success-text">تم طلب المنتج بنجاح <br/> سنتصل بكم في أقرب وقت ممكن</h2>
+          <h2 className="success-text">
+            تم طلب المنتج بنجاح. <br /> سنتصل بكم في أقرب وقت ممكن
+          </h2>
           <Link className="success-link" to="/">
             <span className="success-link-text">عودة</span>
             <BackArrow className="success-link-icon" />
