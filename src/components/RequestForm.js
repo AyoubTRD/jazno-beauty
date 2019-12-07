@@ -49,7 +49,8 @@ const RequestForm = () => {
         phone
       });
       setLoading(false);
-      history.push(`/success/${qtyPrices[qty]}`);
+      window.fbq("track", "Purchase", {currency: "MAD", value: qtyPrices[qty]});
+      history.push(`/success`);
     } catch (e) {
       console.log(e);
       setLoading(false);
@@ -128,7 +129,7 @@ const RequestForm = () => {
               name="phone"
             />
           </div>
-          <button className="btn btn-submit" type="submit">
+          <button className="btn btn-submit" disabled={loading} type="submit">
             اطلب الآن
           </button>
           {loading ? <Loader className="loader" /> : null}

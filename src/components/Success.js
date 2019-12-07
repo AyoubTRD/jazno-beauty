@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { MdDone as Done } from "react-icons/md";
@@ -6,10 +6,7 @@ import { IoIosArrowBack as BackArrow } from "react-icons/io";
 
 import Footer from "./Footer";
 
-const Success = ({ match: { params } }) => {
-  useEffect(() => {
-    window.fbq("track", "Purchase", { currency: "MAD", value: params.price });
-  }, []);
+const Success = () => {
   return (
     <>
       <div className="success-container footer-support">
