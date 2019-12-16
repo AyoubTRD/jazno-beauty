@@ -14,6 +14,7 @@ import Footer from "./Footer";
 import Success from "./Success";
 import PrivacyPolicy from "./mini/PrivacyPolicy";
 import ReturnPolicy from "./mini/ReturnPolicy";
+import ContactUs from "./mini/ContactUs";
 
 import AnimatedSwitch from "./mini/AnimatedSwitch";
 import AnimatedRoute from "./mini/AnimatedRoute";
@@ -49,6 +50,7 @@ const App = () => {
       <AnimatedSwitch animationClassName="fade" animationTimeout={800}>
         <AnimatedRoute path="/privacy-policy" exact component={PrivacyPolicy} />
         <AnimatedRoute path="/return-policy" exact component={ReturnPolicy} />
+        <AnimatedRoute path="/contact-us" exact component={ContactUs} />
       </AnimatedSwitch>
     </Router>
   );

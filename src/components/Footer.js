@@ -11,13 +11,12 @@ const Footer = () => {
         <Link to="/return-policy" className="footer-link">
           return policy
         </Link>
-        <a
-          href="https://web.facebook.com/jaznobeauty/"
+        <Link
+          to="/contact-us"
           className="footer-link footer-link-ext"
-          target="blank"
         >
           إتصل بنا
-        </a>
+        </Link>
       </footer>
     </div>
   );

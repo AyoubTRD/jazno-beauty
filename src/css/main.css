@@ -670,3 +670,12 @@ a {
   -o-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   opacity: 0; }
+
+
+iframe {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
